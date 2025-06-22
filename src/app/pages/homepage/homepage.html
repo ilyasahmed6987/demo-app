@@ -1,0 +1,11 @@
+<div class="homepage py-4">
+    <div class="container">
+        <div class="row">
+            @for (item of blogs; track $index) {
+                <div class="col-12 col-md-4 col-lg-4 mt-3">
+                    <app-blog-card [blog]="item"></app-blog-card>
+                </div>
+            }
+        </div>
+    </div>
+</div>
